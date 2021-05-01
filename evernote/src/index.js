@@ -4,23 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const firebase = require('firebase');
-require('firebase/firestore');
-
-var firebaseConfig = {
+import firebase from 'firebase';
+firebase.initializeApp({
   apiKey: "AIzaSyCfYmFvdzwHYd4x_eb7hM-Axqltn582TJ8",
   authDomain: "evernote-ec1a9.firebaseapp.com",
   projectId: "evernote-ec1a9",
   storageBucket: "evernote-ec1a9.appspot.com",
   messagingSenderId: "95352223441",
   appId: "1:95352223441:web:1975dab367f9aa710337f0"
-};
+});
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+//firebase.initializeApp(firebaseConfig);
 
-ReactDOM.render(
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('evernote-container'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
