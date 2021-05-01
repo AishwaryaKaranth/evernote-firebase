@@ -5,9 +5,9 @@ import firebase from 'firebase';
 import './App.css';
 
 const App=()=>{
-  const [selectedNoteIndex, setSelectedNoteIndex]=useState(null);
+ /* const [selectedNoteIndex, setSelectedNoteIndex]=useState(null);
   const [selectedNote, setSelectedNote]=useState(null);
-  const [notes, setNotes]=useState([]);
+  const [notes, setNotes]=useState([]);*/
   return(
     <div class="App">
 
